@@ -12,15 +12,12 @@
 <body>
     <header>
         <div class="container">
-            <h1>Al-Qur'an Online Nasional</h1>
+            <h1>Mari Mengaji</h1>
             <nav>
                 <ul>
                     <li><a href="#">Beranda</a></li>
-                    <li><a href="#">Baca Qur'an</a></li>
-                    <li><a href="#">Terjemahan</a></li>
-                    <li><a href="#">Tafsir</a></li>
+                    <li><a href="#surah-list" id="baca-quran">Baca Qur'an</a></li>
                     <li><a href="#">Tentang Kami</a></li>
-                    <li><a href="#">Kontak</a></li>
                     <li>
                         <a href="#">Akun <i class="fa fa-caret-down"></i></a>
                         <ul class="dropdown">
@@ -36,10 +33,10 @@
     <main>
         <section class="hero">
             <video autoplay muted loop id="bg-video">
-                <source src="video/bg-video.mp4" type="video/mp4">
+                <source src="vidio.mp4" type="video/mp4">
             </video>
             <div class="container">
-                <h2>Selamat Datang di Al-Qur'an Online Nasional</h2>
+                <h2>Selamat Datang Mari Mengaji</h2>
                 <p>Baca dan pahami Al-Qur'an dengan mudah dari mana saja</p>
                 <button onclick="openModal()">Baca Sekarang</button>
             </div>
@@ -55,7 +52,7 @@
                 <div class="feature">
                     <i class="fas fa-language fa-3x"></i>
                     <h3>Terjemahan</h3>
-                    <p>Lihat terjemahan dalam berbagai bahasa.</p>
+                    <p>Lihat terjemahan dalam bahasa Indo dan Arab.</p>
                 </div>
                 <div class="feature">
                     <i class="fas fa-book-reader fa-3x"></i>
@@ -65,42 +62,19 @@
             </div>
         </section>
 
+        <div id="container">
+            <h1>Daftar Surah</h1>
+            <input type="text" id="search-input" placeholder="Cari surah...">
+            <div id="surah-list"></div>
+        </div>
+
         <section class="carousel">
             <div class="container">
                 <div class="slick-carousel">
-                    <div><img src="https://via.placeholder.com/1200x400" alt="Image 1"></div>
-                    <div><img src="https://via.placeholder.com/1200x400" alt="Image 2"></div>
-                    <div><img src="https://via.placeholder.com/1200x400" alt="Image 3"></div>
+                    <div><img src="img1.png" alt="Image 1"></div>
+                    <div><img src="img2.png" alt="Image 2"></div>
+                    <div><img src="img3.png" alt="Image 3"></div>
                 </div>
-            </div>
-        </section>
-
-        <section class="news">
-            <div class="container">
-                <h2>Berita Terbaru</h2>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="News 1">
-                    <div class="news-content">
-                        <h3>Judul Berita 1</h3>
-                        <p>Ringkasan berita terbaru mengenai topik tertentu.</p>
-                        <a href="#" class="read-more">Baca Selengkapnya</a>
-                    </div>
-                </div>
-                <div class="news-item">
-                    <img src="https://via.placeholder.com/300x200" alt="News 2">
-                    <div class="news-content">
-                        <h3>Judul Berita 2</h3>
-                        <p>Ringkasan berita terbaru mengenai topik tertentu.</p>
-                        <a href="#" class="read-more">Baca Selengkapnya</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="map">
-            <div class="container">
-                <h2>Lokasi Masjid Terdekat</h2>
-                <div id="map"></div>
             </div>
         </section>
 
@@ -162,6 +136,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
-    <script src="scripts.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
